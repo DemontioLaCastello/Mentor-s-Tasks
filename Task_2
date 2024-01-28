@@ -5,4 +5,4 @@ def string_returning(**kwargs):
         answer.append(f"{key} = {value}")
     return answer
 
-print(string_returning(lemon = 29.3, green_apple = 450, toy = None))
+print(string_returning(lemon = 29.3, green_apple = 450, toy = None))  # ['lemon = 29.3', 'green_apple = 450', 'toy = None']
