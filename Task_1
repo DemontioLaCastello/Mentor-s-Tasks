@@ -1,0 +1,10 @@
+# Написать функцию которая принимает неограниченное количество неименованных аргументов, вернуть сумму аргументов которые являются числами (int, float)
+def summarizing_only_nums(*args):
+    result = 0
+    for num in args:
+        if type(num) is int or type(num) is float:
+            result += num
+    return result
+
+
+print(summarizing_only_nums(1, 5, 6, True, 'profit', 9.999))  # 21.999000000000002
