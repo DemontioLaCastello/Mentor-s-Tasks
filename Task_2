@@ -1,0 +1,8 @@
+# Написать функцию которая принимает неограниченное количество именованных аргументов, вернуть список строк вида: ['parameter_name=parameter_value', ...]
+def string_returning(**kwargs):
+    answer = []
+    for key, value in kwargs.items():
+        answer.append(f"{key} = {value}")
+    return answer
+
+print(string_returning(lemon = 29.3, green_apple = 450, toy = None))
